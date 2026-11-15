@@ -4,7 +4,6 @@ import { useState } from "react";
 import {
   Mail,
   Phone,
-  MapPin,
   Clock,
   Send,
   CheckCircle2,
@@ -100,10 +99,10 @@ export function ContactSection() {
                       Official Inquiry Email
                     </span>
                     <a
-                      href="mailto:contact@terrasort.ai"
+                      href="mailto:ebenyi@terrasortai.site"
                       className="text-sm font-semibold text-slate-800 dark:text-slate-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
                     >
-                      contact@terrasort.ai
+                      ebenyi@terrasortai.site
                     </a>
                   </div>
                 </div>
@@ -118,28 +117,11 @@ export function ContactSection() {
                       Operations Support Desk
                     </span>
                     <a
-                      href="tel:+18005550199"
+                      href="tel:+2348133332303"
                       className="text-sm font-semibold text-slate-800 dark:text-slate-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
                     >
-                      +1 (800) 555-0199
+                      +2348133332303
                     </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <div className="p-2.5 rounded-xl bg-teal-500/10 text-teal-600 dark:text-teal-400 border border-teal-500/20 flex-shrink-0 mt-0.5">
-                    <MapPin className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <span className="text-[11px] font-mono text-slate-500 dark:text-slate-400 uppercase tracking-wider block">
-                      Refinery Systems Engineering Lab
-                    </span>
-                    <span className="text-sm font-semibold text-slate-800 dark:text-slate-100 block">
-                      Industrial Automation District, Suite 400
-                    </span>
-                    <span className="text-xs text-slate-500 dark:text-slate-400">
-                      Chicago, IL 60607
-                    </span>
                   </div>
                 </div>
 
@@ -166,7 +148,7 @@ export function ContactSection() {
                 Feedstock Sample Testing Program:
               </span>
               <p className="text-teal-700 dark:text-teal-400/90 leading-relaxed">
-                Recycling operators can ship 5kg blind scrap test samples to our Chicago laboratory for free multi-spectral XRF assay and yield purity quantification.
+                Recycling operators can ship 5kg blind scrap test samples to our laboratory for free multi-spectral XRF assay and yield purity quantification.
               </p>
             </div>
           </div>

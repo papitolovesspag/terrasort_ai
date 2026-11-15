@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import {
   ShieldCheck,
   Award,
@@ -89,28 +90,14 @@ export function AboutSection() {
               {/* Founder Photo / Avatar Placeholder */}
               <div className="flex-shrink-0 text-center">
                 <div className="relative w-40 h-40 sm:w-44 sm:h-44 rounded-2xl overflow-hidden border-2 border-teal-400/80 shadow-glow bg-slate-800 flex items-center justify-center">
-                  {/* Clean SVG Founder Portrait Placeholder */}
-                  <svg
-                    viewBox="0 0 160 160"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-full h-full text-slate-700"
-                  >
-                    <rect width="160" height="160" fill="#0F172A" />
-                    <circle cx="80" cy="62" r="30" fill="#1E293B" stroke="#14B8A6" strokeWidth="2" />
-                    <path
-                      d="M26 142C26 112 50 96 80 96C110 96 134 112 134 142"
-                      fill="#1E293B"
-                      stroke="#14B8A6"
-                      strokeWidth="2"
-                    />
-                    <circle cx="80" cy="58" r="14" fill="#334155" />
-                    {/* Glasses & smart engineer motif */}
-                    <rect x="70" y="54" width="8" height="5" rx="1" fill="#14B8A6" />
-                    <rect x="82" y="54" width="8" height="5" rx="1" fill="#14B8A6" />
-                    <line x1="78" y1="56" x2="82" y2="56" stroke="#14B8A6" strokeWidth="1.5" />
-                  </svg>
-                  <div className="absolute bottom-2 right-2 p-1.5 rounded-lg bg-teal-500 text-slate-950 shadow-sm">
+                  <Image
+                    src="/founder.jpg"
+                    alt="Ebenyi - Founder & CEO"
+                    fill
+                    className="object-cover object-top"
+                    priority
+                  />
+                  <div className="absolute bottom-2 right-2 p-1.5 rounded-lg bg-teal-500 text-slate-950 shadow-sm z-10">
                     <Award className="w-4 h-4" />
                   </div>
                 </div>
@@ -125,7 +112,7 @@ export function AboutSection() {
               <div className="space-y-4 text-center md:text-left">
                 <div>
                   <h3 className="text-2xl font-bold text-white tracking-tight">
-                    Dr. Elena Vance
+                    Ebenyi
                   </h3>
                   <p className="text-sm font-mono text-teal-400 mt-0.5">
                     Founder & CEO • TerraSort AI
@@ -133,17 +120,17 @@ export function AboutSection() {
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                  Dr. Elena Vance is an industrial metallurgist and former senior optical spectroscopy researcher with over 15 years pioneering real-time XRF algorithms and laser-induced breakdown spectroscopy for mineral liberation. She founded TerraSort AI to eliminate wasteful chemical smelting and build autonomous edge refineries directly inside global e-waste sorting centers.
+                  Ebenyi is a pioneering deep-tech systems architect specializing in spectroscopic computer vision, edge machine learning, and autonomous industrial robotics. Combining applied metallurgical physics with high-speed sensor fusion and deterministic pneumatic deflection, he founded TerraSort AI to engineer autonomous circular mineral refineries, eliminating toxic chemical smelting and unlocking sovereign, battery-grade commodity reserves from global electronic scrap.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2">
                   <div className="flex items-center gap-2 text-xs text-slate-300">
                     <CheckCircle2 className="w-3.5 h-3.5 text-teal-400 flex-shrink-0" />
-                    <span>Ph.D. in Applied Metallurgical Physics</span>
+                    <span>Applied Metallurgical Physics & Edge AI</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-slate-300">
                     <CheckCircle2 className="w-3.5 h-3.5 text-teal-400 flex-shrink-0" />
-                    <span>14 Granted Mineral Deflection Patents</span>
+                    <span>High-Speed Spectroscopic Vision Architecture</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-slate-300">
                     <CheckCircle2 className="w-3.5 h-3.5 text-teal-400 flex-shrink-0" />
@@ -151,7 +138,7 @@ export function AboutSection() {
                   </div>
                   <div className="flex items-center gap-2 text-xs text-slate-300">
                     <CheckCircle2 className="w-3.5 h-3.5 text-teal-400 flex-shrink-0" />
-                    <span>ISO/TC 333 Lithium Standard Advisory</span>
+                    <span>Deterministic Pneumatic Mineral Deflection Systems</span>
                   </div>
                 </div>
               </div>

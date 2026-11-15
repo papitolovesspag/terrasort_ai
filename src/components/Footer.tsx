@@ -1,5 +1,5 @@
 import { BrandLogo } from "@/components/ui/BrandLogo";
-import { Mail, Phone, MapPin, Shield, ArrowUp } from "lucide-react";
+import { Mail, Phone, Shield, ArrowUp } from "lucide-react";
 
 export function Footer() {
   return (
@@ -102,24 +102,20 @@ export function Footer() {
               <div className="flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5 text-teal-500" />
                 <a
-                  href="mailto:contact@terrasort.ai"
+                  href="mailto:ebenyi@terrasortai.site"
                   className="hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
                 >
-                  contact@terrasort.ai
+                  ebenyi@terrasortai.site
                 </a>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-3.5 h-3.5 text-teal-500" />
                 <a
-                  href="tel:+18005550199"
+                  href="tel:+2348133332303"
                   className="hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
                 >
-                  +1 (800) 555-0199
+                  +2348133332303
                 </a>
-              </div>
-              <div className="flex items-start gap-2 pt-1 text-slate-500">
-                <MapPin className="w-3.5 h-3.5 text-teal-500 flex-shrink-0 mt-0.5" />
-                <span>Chicago, IL 60607, USA</span>
               </div>
             </div>
           </div>
