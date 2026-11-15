@@ -99,10 +99,10 @@ export function ContactSection() {
                       Official Inquiry Email
                     </span>
                     <a
-                      href="mailto:ebenyi@terrasortai.site"
+                      href="mailto:donald@terrasortai.site"
                       className="text-sm font-semibold text-slate-800 dark:text-slate-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
                     >
-                      ebenyi@terrasortai.site
+                      donald@terrasortai.site
                     </a>
                   </div>
                 </div>
@@ -117,10 +117,10 @@ export function ContactSection() {
                       Operations Support Desk
                     </span>
                     <a
-                      href="tel:+2348133332303"
+                      href="tel:+2348152724145"
                       className="text-sm font-semibold text-slate-800 dark:text-slate-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
                     >
-                      +2348133332303
+                      +234 815 272 4145
                     </a>
                   </div>
                 </div>

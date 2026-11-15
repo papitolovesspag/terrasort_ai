@@ -662,34 +662,34 @@ function runTier1() {
   // E2E-T1-R6-01: Canonical Business Email Cardinality
   runAssertion(
     "E2E-T1-R6-01",
-    "Contact Us displays strictly ONE business email: ebenyi@terrasortai.site",
+    "Contact Us displays strictly ONE business email: donald@terrasortai.site",
     () => {
       const contact = resolveComponent("contact").content;
       const emailRegex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g;
       const emails = [...new Set(contact.match(emailRegex) || [])];
 
-      if (emails.length !== 1 || emails[0].toLowerCase() !== "ebenyi@terrasortai.site") {
-        throw new Error(`Expected exactly 1 email ('ebenyi@terrasortai.site'), found ${emails.length}: [${emails.join(", ")}]`);
+      if (emails.length !== 1 || emails[0].toLowerCase() !== "donald@terrasortai.site") {
+        throw new Error(`Expected exactly 1 email ('donald@terrasortai.site'), found ${emails.length}: [${emails.join(", ")}]`);
       }
 
-      return "Strictly ONE business email ('ebenyi@terrasortai.site') verified in Contact section.";
+      return "Strictly ONE business email ('donald@terrasortai.site') verified in Contact section.";
     }
   );
 
   // E2E-T1-R6-02: Canonical Business Phone Cardinality
   runAssertion(
     "E2E-T1-R6-02",
-    "Contact Us displays strictly ONE business phone number: +2348133332303",
+    "Contact Us displays strictly ONE business phone number: +234 815 272 4145",
     () => {
       const contact = resolveComponent("contact").content;
-      const phoneDisplayPattern = /\+234[0-9]{10}|\+234\s*[0-9]{3}\s*[0-9]{3}\s*[0-9]{4}/g;
+      const phoneDisplayPattern = /\+234\s+[0-9]{3}\s+[0-9]{3}\s+[0-9]{4}/g;
       const phones = [...new Set(contact.match(phoneDisplayPattern) || [])];
 
-      if (phones.length !== 1 || !phones[0].includes("8133332303")) {
-        throw new Error(`Expected exactly 1 phone ('+2348133332303'), found: [${phones.join(", ")}]`);
+      if (phones.length !== 1 || !phones[0].includes("815 272 4145")) {
+        throw new Error(`Expected exactly 1 phone ('+234 815 272 4145'), found: [${phones.join(", ")}]`);
       }
 
-      return "Strictly ONE business phone ('+2348133332303') verified in Contact section.";
+      return "Strictly ONE business phone ('+234 815 272 4145') verified in Contact section.";
     }
   );
 
@@ -887,7 +887,7 @@ function runTier2() {
   // E2E-T2-03: Single Business Email Cardinality
   runAssertion(
     "E2E-T2-03",
-    "Website contains EXACTLY 1 unique business email: ebenyi@terrasortai.site across all source files",
+    "Website contains EXACTLY 1 unique business email: donald@terrasortai.site across all source files",
     () => {
       const srcFiles = scanDirRecursive("src");
       const emailRegex = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b/g;
@@ -902,21 +902,21 @@ function runTier2() {
       }
 
       const emailList = [...foundEmails];
-      if (emailList.length !== 1 || emailList[0] !== "ebenyi@terrasortai.site") {
-        throw new Error(`Expected exactly 1 email ('ebenyi@terrasortai.site'), found ${emailList.length}: [${emailList.join(", ")}]`);
+      if (emailList.length !== 1 || emailList[0] !== "donald@terrasortai.site") {
+        throw new Error(`Expected exactly 1 email ('donald@terrasortai.site'), found ${emailList.length}: [${emailList.join(", ")}]`);
       }
 
-      return "Strictly ONE email ('ebenyi@terrasortai.site') verified across all application source files.";
+      return "Strictly ONE email ('donald@terrasortai.site') verified across all application source files.";
     }
   );
 
   // E2E-T2-04: Single Business Phone Cardinality
   runAssertion(
     "E2E-T2-04",
-    "Website contains EXACTLY 1 unique phone number: +2348133332303 across all source files",
+    "Website contains EXACTLY 1 unique phone number: +234 815 272 4145 across all source files",
     () => {
       const srcFiles = scanDirRecursive("src");
-      const phoneRegex = /\+?234[-.\s]?\d{10}|\+?1?[-.\s]?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}/g;
+      const phoneRegex = /\+?234[-.\s]?\d{3}[-.\s]?\d{3}[-.\s]?\d{4}|\+?234[-.\s]?\d{10}|\+?1?[-.\s]?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}/g;
 
       const foundPhones = new Set();
       for (const filePath of srcFiles) {
@@ -931,11 +931,11 @@ function runTier2() {
       }
 
       const phoneList = [...foundPhones];
-      if (phoneList.length !== 1 || phoneList[0] !== "8133332303") {
-        throw new Error(`Expected exactly 1 phone ('8133332303' for +2348133332303), found: [${phoneList.join(", ")}]`);
+      if (phoneList.length !== 1 || phoneList[0] !== "8152724145") {
+        throw new Error(`Expected exactly 1 phone ('8152724145' for +234 815 272 4145), found: [${phoneList.join(", ")}]`);
       }
 
-      return "Strictly ONE phone number ('+2348133332303') verified across all application source files.";
+      return "Strictly ONE phone number ('+234 815 272 4145') verified across all application source files.";
     }
   );
 

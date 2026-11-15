@@ -102,19 +102,19 @@ export function Footer() {
               <div className="flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5 text-teal-500" />
                 <a
-                  href="mailto:ebenyi@terrasortai.site"
+                  href="mailto:donald@terrasortai.site"
                   className="hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
                 >
-                  ebenyi@terrasortai.site
+                  donald@terrasortai.site
                 </a>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-3.5 h-3.5 text-teal-500" />
                 <a
-                  href="tel:+2348133332303"
+                  href="tel:+2348152724145"
                   className="hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
                 >
-                  +2348133332303
+                  +234 815 272 4145
                 </a>
               </div>
             </div>

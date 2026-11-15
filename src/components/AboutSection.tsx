@@ -92,7 +92,7 @@ export function AboutSection() {
                 <div className="relative w-40 h-40 sm:w-44 sm:h-44 rounded-2xl overflow-hidden border-2 border-teal-400/80 shadow-glow bg-slate-800 flex items-center justify-center">
                   <Image
                     src="/founder.jpg"
-                    alt="Ebenyi - Founder & CEO"
+                    alt="Donald - Founder & CEO"
                     fill
                     className="object-cover object-top"
                     priority
@@ -112,7 +112,7 @@ export function AboutSection() {
               <div className="space-y-4 text-center md:text-left">
                 <div>
                   <h3 className="text-2xl font-bold text-white tracking-tight">
-                    Ebenyi
+                    Donald
                   </h3>
                   <p className="text-sm font-mono text-teal-400 mt-0.5">
                     Founder & CEO • TerraSort AI
@@ -120,7 +120,7 @@ export function AboutSection() {
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                  Ebenyi is a pioneering deep-tech systems architect specializing in spectroscopic computer vision, edge machine learning, and autonomous industrial robotics. Combining applied metallurgical physics with high-speed sensor fusion and deterministic pneumatic deflection, he founded TerraSort AI to engineer autonomous circular mineral refineries, eliminating toxic chemical smelting and unlocking sovereign, battery-grade commodity reserves from global electronic scrap.
+                  Donald is a pioneering deep-tech systems architect specializing in spectroscopic computer vision, edge machine learning, and autonomous industrial robotics. Combining applied metallurgical physics with high-speed sensor fusion and deterministic pneumatic deflection, he founded TerraSort AI to engineer autonomous circular mineral refineries, eliminating toxic chemical smelting and unlocking sovereign, battery-grade commodity reserves from global electronic scrap.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2">
